@@ -1,0 +1,401 @@
+guid: 176d5cef-ff11-41a4-b5ff-0d78a0a37d62
+pinboard:
+  name: Activity Center - Credits
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Job Credits by Project Id & Configuration Name
+      description: Only Showing Top 10 Components (does not include workspaces)
+      tables:
+      - id: Activity Center Worksheet
+        name: Activity Center Worksheet
+      search_query: "sum [Job Billed Credits] by [Configuration Name] top 15 [Project Id]"
+      answer_columns:
+      - name: Total Job Billed Credits
+      - name: Project Id
+      - name: Configuration Name
+      table:
+        table_columns:
+        - column_id: Configuration Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Project Id
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Job Billed Credits
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Configuration Name
+        - Project Id
+        - Total Job Billed Credits
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: SANKEY
+        chart_columns:
+        - column_id: Configuration Name
+        - column_id: Project Id
+        - column_id: Total Job Billed Credits
+        axis_configs:
+        - x:
+          - Configuration Name
+          - Project Id
+          "y":
+          - Total Job Billed Credits
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Total Job Billed Credits\",\"columnProperty\": {}},{\"columnId\": \"Configuration Name\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"fb91b224-7dfd-4234-9b82-0e132256ce2c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Job Billed Credits\"],\"isOpposite\": false}},{\"id\": \"fdbdfb10-e531-4e84-96ed-480d744110aa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Project Id\",\"Configuration Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"10617-gaa-adwords\",\"color\": \"#721F27\"},{\"serieName\": \"10617-gaa-google-analytics\",\"color\": \"#F47E89\"},{\"serieName\": \"crm\",\"color\": \"#B6313E\"},{\"serieName\": \"gaa-adwords\",\"color\": \"#F9B3B9\"},{\"serieName\": \"gaa-google-analytics\",\"color\": \"#F04152\"},{\"serieName\": \"l0_sales_marketing_nlp\",\"color\": \"#2F3947\"},{\"serieName\": \"l1_client_statistics_nlp\",\"color\": \"#A2ACBA\"},{\"serieName\": \"out_salesforce_crm_model\",\"color\": \"#47515F\"},{\"serieName\": \"salesforce_crm_model\",\"color\": \"#BEC6D0\"},{\"serieName\": \"salesforce_crm_transformation\",\"color\": \"#747E8C\"},{\"serieName\": \"shared_salesforce_crm_transformation\",\"color\": \"#7A3D1F\"},{\"serieName\": \"support\",\"color\": \"#FFA97E\"},{\"serieName\": \"salesforcecrm\",\"color\": \"#C26232\"},{\"serieName\": \"zendesk_support_transformation\",\"color\": \"#FFCCB3\"},{\"serieName\": \"zendesk_support_transformation-romantest\",\"color\": \"#FF8142\"},{\"serieName\": \"zendesk_support_transformation-roman\",\"color\": \"#422E75\"},{\"serieName\": \"account_contact\",\"color\": \"#B094F8\"},{\"serieName\": \"bestbuy\",\"color\": \"#6A4ABA\"},{\"serieName\": \"bestbuy-large\",\"color\": \"#D1C0FB\"},{\"serieName\": \"bestbuy-small\",\"color\": \"#8C62F5\"},{\"serieName\": \"csv-import\",\"color\": \"#025B3C\"},{\"serieName\": \"data-integration\",\"color\": \"#56D3A8\"},{\"serieName\": \"demo-keboola-ex-aws-s3-11963428\",\"color\": \"#049160\"},{\"serieName\": \"demo-keboola-ex-db-mysql-15118507\",\"color\": \"#9BE5CB\"},{\"serieName\": \"demo-keboola-ex-facebook-ads-11957313\",\"color\": \"#06BF7F\"},{\"serieName\": \"demo-keboola-ex-google-drive-10487558\",\"color\": \"#785F1A\"},{\"serieName\": \"demo-keboola-ex-http-14717600\",\"color\": \"#FCD977\"},{\"serieName\": \"demo-nlp\",\"color\": \"#BF982A\"},{\"serieName\": \"dummy-api\",\"color\": \"#FDE9AF\"},{\"serieName\": \"dummy-api-sql-transformation\",\"color\": \"#FCC838\"},{\"serieName\": \"ex-api-generikbcomponents\",\"color\": \"#22636B\"},{\"serieName\": \"kds-team-ex-google-nlp-6340154\",\"color\": \"#82DFE9\"},{\"serieName\": \"kds-team-ex-google-nlp-8076935\",\"color\": \"#369FAA\"},{\"serieName\": \"kds-team-ex-google-translation-8477020\",\"color\": \"#B5ECF2\"},{\"serieName\": \"kds-team-ex-hubspot-crm-8224601\",\"color\": \"#48D1E0\"},{\"serieName\": \"kds-team-ex-hubspot-crm-8426041\",\"color\": \"#163772\"},{\"serieName\": \"kds-team-ex-kbproject-metadata-v2-12278349\",\"color\": \"#71A1F4\"},{\"serieName\": \"kds-team-ex-kbproject-metadata-v2-6181332\",\"color\": \"#2359B6\"},{\"serieName\": \"kds-team-ex-salesforce-v2-5819989\",\"color\": \"#ABC7F9\"},{\"serieName\": \"kds-team-ex-shopify-11446513\",\"color\": \"#2E75F0\"},{\"serieName\": \"kds-team-ex-shopify-11945437\",\"color\": \"#721F27\"},{\"serieName\": \"keboola-ex-adwords\",\"color\": \"#F47E89\"},{\"serieName\": \"keboola-ex-db-mysql-11819135\",\"color\": \"#B6313E\"},{\"serieName\": \"keboola-ex-db-mysql-12644555\",\"color\": \"#F9B3B9\"},{\"serieName\": \"keboola-ex-db-mysql-12666718\",\"color\": \"#F04152\"},{\"serieName\": \"keboola-ex-db-mysql-6225247\",\"color\": \"#2F3947\"},{\"serieName\": \"keboola-ex-db-mysql-7829165\",\"color\": \"#A2ACBA\"},{\"serieName\": \"keboola-ex-db-pgsql-12010149\",\"color\": \"#47515F\"},{\"serieName\": \"keboola-ex-facebook-7958076\",\"color\": \"#BEC6D0\"},{\"serieName\": \"keboola-ex-facebook-ads-7364652\",\"color\": \"#747E8C\"},{\"serieName\": \"keboola-ex-google-analytics\",\"color\": \"#7A3D1F\"},{\"serieName\": \"keboola-ex-google-analytics-v4-12586987\",\"color\": \"#FFA97E\"},{\"serieName\": \"keboola-ex-google-analytics-v4-12658463\",\"color\": \"#C26232\"},{\"serieName\": \"keboola-ex-google-drive-10487290\",\"color\": \"#FFCCB3\"},{\"serieName\": \"keboola-ex-google-drive-6451338\",\"color\": \"#FF8142\"},{\"serieName\": \"keboola-ex-google-drive-7957478\",\"color\": \"#422E75\"},{\"serieName\": \"keboola-ex-telemetry-data-6181519\",\"color\": \"#B094F8\"},{\"serieName\": \"keboola-ex-telemetry-data-8947841\",\"color\": \"#6A4ABA\"},{\"serieName\": \"keboola-ex-twitter-8647737\",\"color\": \"#D1C0FB\"},{\"serieName\": \"keboola-ex-zendesk-5783451\",\"color\": \"#8C62F5\"},{\"serieName\": \"keboola_sentiments\",\"color\": \"#025B3C\"},{\"serieName\": \"leochan-google-places-reviews-7957262\",\"color\": \"#56D3A8\"},{\"serieName\": \"main\",\"color\": \"#049160\"},{\"serieName\": \"mapping-test-dummy-api\",\"color\": \"#9BE5CB\"},{\"serieName\": \"most-active-users\",\"color\": \"#06BF7F\"},{\"serieName\": \"nlp\",\"color\": \"#785F1A\"},{\"serieName\": \"nlp-batch-scoring\",\"color\": \"#FCD977\"},{\"serieName\": \"nlp-prep-data\",\"color\": \"#BF982A\"},{\"serieName\": \"nlp_data_science\",\"color\": \"#FDE9AF\"},{\"serieName\": \"out_account_website\",\"color\": \"#FCC838\"},{\"serieName\": \"out_gaa-google-analytics\",\"color\": \"#22636B\"},{\"serieName\": \"pre_nlp\",\"color\": \"#82DFE9\"},{\"serieName\": \"salesforce\",\"color\": \"#369FAA\"},{\"serieName\": \"test\",\"color\": \"#B5ECF2\"},{\"serieName\": \"test-roman\",\"color\": \"#48D1E0\"},{\"serieName\": \"testing-data-10979699\",\"color\": \"#163772\"},{\"serieName\": \"zendesk\",\"color\": \"#71A1F4\"},{\"serieName\": \"zendesksupport\",\"color\": \"#2359B6\"},{\"serieName\": \"{null}\",\"color\": \"#B094F8\"},{\"serieName\": \"4310_eu-west-1_azure\",\"color\": \"#8C62F5\"},{\"serieName\": \"4311_eu-west-1_azure\",\"color\": \"#56D3A8\"},{\"serieName\": \"4312_eu-west-1_azure\",\"color\": \"#06BF7F\"},{\"serieName\": \"5437_eu-west-1_azure\",\"color\": \"#FCD977\"},{\"serieName\": \"5539_eu-west-1_azure\",\"color\": \"#FCC838\"},{\"serieName\": \"5931_eu-west-1_azure\",\"color\": \"#82DFE9\"},{\"serieName\": \"6095_eu-west-1_azure\",\"color\": \"#48D1E0\"},{\"serieName\": \"6445_eu-west-1_azure\",\"color\": \"#71A1F4\"},{\"serieName\": \"6457_eu-west-1_azure\",\"color\": \"#2E75F0\"},{\"serieName\": \"l0 - ops\",\"color\": \"#06BF7F\"},{\"serieName\": \"l0 - sales & marketing\",\"color\": \"#FCC838\"},{\"serieName\": \"l0 - support\",\"color\": \"#48D1E0\"},{\"serieName\": \"l0 - telemetry\",\"color\": \"#71A1F4\"},{\"serieName\": \"l1 - client statistics\",\"color\": \"#2E75F0\"},{\"serieName\": \"Configuration Name\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+  - id: Viz_2
+    answer:
+      name: "Total Time Credits Value by Usage Breakdown, Project"
+      tables:
+      - id: Usage Metrics Worksheet
+        name: Usage Metrics Worksheet
+      search_query: "[Time Credits Value] [Usage Breakdown] [Kbc Project Id]"
+      answer_columns:
+      - name: Usage Breakdown
+      - name: Total Time Credits Value
+      - name: Kbc Project Id
+      table:
+        table_columns:
+        - column_id: Usage Breakdown
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Kbc Project Id
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Time Credits Value
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Usage Breakdown
+        - Kbc Project Id
+        - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: SANKEY
+        chart_columns:
+        - column_id: Usage Breakdown
+        - column_id: Kbc Project Id
+        - column_id: Total Time Credits Value
+        axis_configs:
+        - x:
+          - Usage Breakdown
+          - Kbc Project Id
+          "y":
+          - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"fedeb6cb-fec2-45b9-9fde-0e38a5b318a3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Time Credits Value\"],\"isOpposite\": false}},{\"id\": \"6821a022-3a9d-4d56-bf0e-86bc4488f4cf\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Usage Breakdown\",\"Kbc Project Id\"]}}],\"systemSeriesColors\": [{\"serieName\": \"applications\",\"color\": \"#8C62F5\"},{\"serieName\": \"data science\",\"color\": \"#56D3A8\"},{\"serieName\": \"data science sandbox\",\"color\": \"#06BF7F\"},{\"serieName\": \"kbc projects\",\"color\": \"#FCD977\"},{\"serieName\": \"kbc tb\",\"color\": \"#FCC838\"},{\"serieName\": \"snowflake sandbox\",\"color\": \"#82DFE9\"},{\"serieName\": \"snowflake writer\",\"color\": \"#48D1E0\"},{\"serieName\": \"transformations\",\"color\": \"#71A1F4\"},{\"serieName\": \"writers\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+  - id: Viz_3
+    answer:
+      name: Job Billed Credits by Day
+      tables:
+      - id: Usage Metrics Worksheet
+        name: Usage Metrics Worksheet
+      search_query: "sum [Time Credits Value] by [Date].day [Date] >= '09/30/2021'"
+      answer_columns:
+      - name: Total Time Credits Value
+      - name: Day(Date)
+      table:
+        table_columns:
+        - column_id: Day(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Time Credits Value
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Day(Date)
+        - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Day(Date)
+        - column_id: Total Time Credits Value
+        axis_configs:
+        - x:
+          - Day(Date)
+          "y":
+          - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Day(Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Time Credits Value\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1c2c7f5e-7bbf-4cf7-92ca-b07334a9b606\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Time Credits Value\"],\"isOpposite\": false}},{\"id\": \"22905216-7690-49a3-9df8-f236d7cb98e5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Date)\"]}}]}"
+      display_mode: CHART_MODE
+  - id: Viz_4
+    answer:
+      name: Total Job Billed Credits
+      tables:
+      - id: Usage Metrics Worksheet
+        name: Usage Metrics Worksheet
+      search_query: "sum [Time Credits Value]"
+      answer_columns:
+      - name: Total Time Credits Value
+      table:
+        table_columns:
+        - column_id: Total Time Credits Value
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Time Credits Value
+        axis_configs:
+        - "y":
+          - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"72e02e63-a8a2-4300-a534-7cb55386c1a5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Time Credits Value\"],\"isOpposite\": false}},{\"id\": \"794464ed-5ea1-4bcb-ac0f-8a6eb1a9cf72\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+  - id: Viz_5
+    answer:
+      name: Billed Credits this Month
+      tables:
+      - id: Usage Metrics Worksheet
+        name: Usage Metrics Worksheet
+      search_query: "sum [Time Credits Value] [Date].'this month'"
+      answer_columns:
+      - name: Total Time Credits Value
+      table:
+        table_columns:
+        - column_id: Total Time Credits Value
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Time Credits Value
+        axis_configs:
+        - "y":
+          - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Total Time Credits Value\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"64ceaa63-4827-4d76-84c7-e7834e971b02\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Time Credits Value\"],\"isOpposite\": false}},{\"id\": \"141e8c32-c89f-4bb2-8b2d-77bff655ad47\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Time Credits Value\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+  - id: Viz_6
+    answer:
+      name: Billed Credits This Month vs. Last Month
+      tables:
+      - id: Usage Metrics Worksheet
+        name: Usage Metrics Worksheet
+      search_query: "sum [Time Credits Value] [Date].'this month' vs [Date].'last month' by [Date].'day of month'"
+      answer_columns:
+      - name: Time Credits Value(this month)
+      - name: DAY_OF_MONTH(Date)
+      - name: Time Credits Value(last month)
+      table:
+        table_columns:
+        - column_id: DAY_OF_MONTH(Date)
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Time Credits Value(this month)
+          headline_aggregation: TABLE_AGGR
+        - column_id: Time Credits Value(last month)
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - DAY_OF_MONTH(Date)
+        - Time Credits Value(this month)
+        - Time Credits Value(last month)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: DAY_OF_MONTH(Date)
+        - column_id: Time Credits Value(this month)
+        - column_id: Time Credits Value(last month)
+        axis_configs:
+        - x:
+          - DAY_OF_MONTH(Date)
+          "y":
+          - Time Credits Value(last month)
+          - Time Credits Value(this month)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"DAY_OF_MONTH(Date)\",\"columnProperty\": {}},{\"columnId\": \"Time Credits Value(this month)\",\"columnProperty\": {}},{\"columnId\": \"Time Credits Value(last month)\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a1d8f7d2-c1ed-4f4b-82f2-148eff5a7452\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Time Credits Value(last month)\"],\"isOpposite\": false}},{\"id\": \"7758bd3a-1253-42f8-b573-2ee10461825c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Time Credits Value(this month)\"],\"isOpposite\": true}},{\"id\": \"98a439a2-eb37-437b-969e-85de13832ebf\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"DAY_OF_MONTH(Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Time Credits Value(this month)\",\"color\": \"#2E75F0\"},{\"serieName\": \"Time Credits Value(last month)\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+  - id: Viz_7
+    answer:
+      name: Total Time Credits Value
+      tables:
+      - id: Usage Metrics Worksheet
+        name: Usage Metrics Worksheet
+      search_query: "sum [Time Credits Value] by [Date].day by [Usage Breakdown] [Date].'this month'"
+      answer_columns:
+      - name: Usage Breakdown
+      - name: Total Time Credits Value
+      - name: Day(Date)
+      table:
+        table_columns:
+        - column_id: Day(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Usage Breakdown
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Time Credits Value
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Day(Date)
+        - Usage Breakdown
+        - Total Time Credits Value
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"widthState\": [{\"columnId\": \"a88a573e-4d2d-49a4-811c-5d013ec86f44\",\"width\": 116.49671936035156},{\"columnId\": \"Day(Date)\",\"width\": 116.49671936035156}],\"wrapTableHeader\": true}"
+      chart:
+        type: STACKED_COLUMN
+        chart_columns:
+        - column_id: Day(Date)
+        - column_id: Usage Breakdown
+        - column_id: Total Time Credits Value
+        axis_configs:
+        - x:
+          - Day(Date)
+          "y":
+          - Total Time Credits Value
+          color:
+          - Usage Breakdown
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Day(Date)\",\"columnProperty\": {}},{\"columnId\": \"Usage Breakdown\",\"columnProperty\": {}},{\"columnId\": \"Total Time Credits Value\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"fac39378-8a15-4edd-9638-cdd696d44819\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Time Credits Value\"],\"isOpposite\": false}},{\"id\": \"f1da82a3-fc14-4745-8206-59a9ef49ef82\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Day(Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Time Credits Value\",\"color\": \"#FCC838\"},{\"serieName\": \"applications\",\"color\": \"#8C62F5\"},{\"serieName\": \"data science\",\"color\": \"#56D3A8\"},{\"serieName\": \"data science sandbox\",\"color\": \"#06BF7F\"},{\"serieName\": \"kbc projects\",\"color\": \"#FCD977\"},{\"serieName\": \"kbc tb\",\"color\": \"#FCC838\"},{\"serieName\": \"snowflake sandbox\",\"color\": \"#82DFE9\"},{\"serieName\": \"snowflake writer\",\"color\": \"#48D1E0\"},{\"serieName\": \"transformations\",\"color\": \"#71A1F4\"},{\"serieName\": \"writers\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+  - id: Viz_8
+    answer:
+      name: Total Run Time Hours by Date
+      description: Total Run Time Hours is overall trending upwards.
+      tables:
+      - id: Usage Metrics Worksheet
+        name: Usage Metrics Worksheet
+      formulas:
+      - id: linear model
+        name: linear model
+        expr: "0.00000277271553509 * [epoch] + -4521.58611671275230037"
+      - id: epoch
+        name: epoch
+        expr: "diff_time ( min ( [Date] ) , 01/01/1970 )"
+      search_query: "[Usage Metrics Worksheet_1::Date] >= '09/30/2021' [Usage Metrics Worksheet_1::Run Time Hours] [Usage Metrics Worksheet_1::Date] [Usage Metrics Worksheet_1::Date].monthly sort by [Usage Metrics Worksheet_1::Date] [Usage Metrics Worksheet_1::Date].monthly [epoch] [linear model]"
+      answer_columns:
+      - name: linear model
+      - name: epoch
+      - name: Total Run Time Hours
+      - name: Month(Date)
+      table:
+        table_columns:
+        - column_id: Month(Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Run Time Hours
+          headline_aggregation: SUM
+        - column_id: epoch
+          headline_aggregation: TABLE_AGGR
+        - column_id: linear model
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Month(Date)
+        - Total Run Time Hours
+        - epoch
+        - linear model
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(Date)
+          conditional_formatting: {}
+        - column_id: Total Run Time Hours
+          conditional_formatting: {}
+        - column_id: epoch
+        - column_id: linear model
+          conditional_formatting: {}
+        axis_configs:
+        - x:
+          - Month(Date)
+          "y":
+          - Total Run Time Hours
+          - linear model
+        client_state: "{\"multiColorSeriesColors\":[],\"systemMultiColorSeriesColors\":[],\"markersEnabled\":true,\"seriesColors\":[],\"chartProperties\":{\"gridLines\":{},\"chartSpecific\":{\"markersEnabled\":true},\"responsiveLayoutPreference\":\"USER_PREFERRED_ON\"},\"axisProperties\":[{\"id\":\"aa907fae-f80f-49ab-ac3f-6e34ffe3997a\",\"properties\":{\"linkedColumns\":[\"Total Run Time Hours\",\"linear model\"],\"axisType\":\"Y\",\"isOpposite\":false}},{\"id\":\"cef2480c-6f1b-4d45-bc2b-41d7bcb1cd93\",\"properties\":{\"linkedColumns\":[\"Month(Date)\"],\"axisType\":\"X\"}}],\"systemSeriesColors\":[],\"yAxisShared\":true,\"version\":\"V4DOT1\",\"columnProperties\":[{\"columnId\":\"Month(Date)\",\"columnProperty\":{}},{\"columnId\":\"Total Run Time Hours\",\"columnProperty\":{}},{\"columnId\":\"linear model\",\"columnProperty\":{}}]}"
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"markersEnabled\": true}},\"axisProperties\": [{\"id\": \"aa907fae-f80f-49ab-ac3f-6e34ffe3997a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Run Time Hours\",\"linear model\"],\"isOpposite\": false}},{\"id\": \"cef2480c-6f1b-4d45-bc2b-41d7bcb1cd93\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Date)\"]}}]}"
+      display_mode: CHART_MODE
+      client_state: "{\"version\":\"V2\"}"
+  - id: Viz_9
+    answer:
+      name: Total Job Credits by User Email
+      tables:
+      - id: User Metrics Worksheet
+        name: User Metrics Worksheet
+      search_query: "[Job Credits] [User Email] sort by [Job Credits] descending"
+      answer_columns:
+      - name: User Email
+      - name: Total Job Credits
+      table:
+        table_columns:
+        - column_id: User Email
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Job Credits
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - User Email
+        - Total Job Credits
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: User Email
+        - column_id: Total Job Credits
+        axis_configs:
+        - x:
+          - User Email
+          "y":
+          - Total Job Credits
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"User Email\",\"columnProperty\": {}},{\"columnId\": \"Total Job Credits\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1c98a775-4b94-4b6b-8ff4-979ac6f6e27d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Job Credits\"],\"isOpposite\": false}},{\"id\": \"75bbda03-51fd-4b54-b03d-e7a53095916a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User Email\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Job Credits\",\"color\": \"#06BF7F\"},{\"serieName\": \"{null}\",\"color\": \"#56D3A8\"},{\"serieName\": \"david esner\",\"color\": \"#06BF7F\"},{\"serieName\": \"david pospisil\",\"color\": \"#FCD977\"},{\"serieName\": \"jordan burger\",\"color\": \"#FCC838\"},{\"serieName\": \"leo\",\"color\": \"#82DFE9\"},{\"serieName\": \"maria buchenko\",\"color\": \"#48D1E0\"},{\"serieName\": \"martin fiser\",\"color\": \"#71A1F4\"},{\"serieName\": \"michal hruska\",\"color\": \"#2E75F0\"},{\"serieName\": \"sample\",\"color\": \"#B094F8\"},{\"serieName\": \"david.pospisil+demo@keboola.com\",\"color\": \"#8C62F5\"},{\"serieName\": \"david.pospisil@keboola.com\",\"color\": \"#56D3A8\"},{\"serieName\": \"david@keboola.com\",\"color\": \"#06BF7F\"},{\"serieName\": \"fisa@keboola.com\",\"color\": \"#FCD977\"},{\"serieName\": \"jordan.burger@keboola.com\",\"color\": \"#FCC838\"},{\"serieName\": \"josef.martinec@keboola.com\",\"color\": \"#82DFE9\"},{\"serieName\": \"leo@keboola.com\",\"color\": \"#48D1E0\"},{\"serieName\": \"maria.buchenko@keboola.com\",\"color\": \"#2359B6\"},{\"serieName\": \"michal.hruska@keboola.com\",\"color\": \"#71A1F4\"},{\"serieName\": \"roman.bracinik@keboola.com\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+  - id: Viz_10
+    answer:
+      name: Total Job Runs by User Email
+      tables:
+      - id: User Metrics Worksheet
+        name: User Metrics Worksheet
+      search_query: "[Job Runs] [User Email] sort by [Job Runs] descending"
+      answer_columns:
+      - name: User Email
+      - name: Total Job Runs
+      table:
+        table_columns:
+        - column_id: User Email
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Job Runs
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - User Email
+        - Total Job Runs
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"wrapTableHeader\": true}"
+      chart:
+        type: BAR
+        chart_columns:
+        - column_id: User Email
+        - column_id: Total Job Runs
+        axis_configs:
+        - x:
+          - User Email
+          "y":
+          - Total Job Runs
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {}},\"axisProperties\": [{\"id\": \"533d88cf-ca96-4a31-a593-4d87a7396922\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Job Runs\"],\"isOpposite\": false}},{\"id\": \"991efdea-e966-4303-a6b9-1d6adb48fd7d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"User Email\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Job Runs\",\"color\": \"#06BF7F\"}]}"
+      display_mode: CHART_MODE
+  layout:
+    tiles:
+    - visualization_id: Viz_3
+      size: SMALL
+    - visualization_id: Viz_4
+      size: EXTRA_SMALL
+    - visualization_id: Viz_6
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_5
+      size: EXTRA_SMALL
+    - visualization_id: Viz_7
+      size: LARGE_SMALL
+    - visualization_id: Viz_9
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_10
+      size: MEDIUM_SMALL
+    - visualization_id: Viz_1
+      size: MEDIUM
+    - visualization_id: Viz_2
+      size: MEDIUM
+    - visualization_id: Viz_8
+      size: LARGE_SMALL

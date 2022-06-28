@@ -1,0 +1,63 @@
+guid: eb09e4aa-04d4-4353-909e-79b9b24ccb25
+table:
+  name: buckets
+  db: KEBOOLA_5539
+  schema: WORKSPACE_15606217
+  db_table: buckets
+  connection:
+    name: Activity Center
+  columns:
+  - name: bucket_project_id
+    db_column_name: bucket_project_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: bucket_id
+    db_column_name: bucket_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: project_id
+    db_column_name: project_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: bucket_name
+    db_column_name: bucket_name
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: bucket_stage
+    db_column_name: bucket_stage
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: bucket_sharing_type
+    db_column_name: bucket_sharing_type
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: is_alias
+    db_column_name: is_alias
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: is_deleted
+    db_column_name: is_deleted
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: bucket_url
+    db_column_name: bucket_url
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

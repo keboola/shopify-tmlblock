@@ -1,0 +1,51 @@
+guid: 8df05fe1-72e8-4a42-920c-71f4c188977a
+table:
+  name: orchestrations_tasks
+  db: KEBOOLA_5539
+  schema: WORKSPACE_15606217
+  db_table: orchestrations_tasks
+  connection:
+    name: Activity Center
+  columns:
+  - name: task_id
+    db_column_name: task_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: orchestration_id
+    db_column_name: orchestration_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: component_id
+    db_column_name: component_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: is_active
+    db_column_name: is_active
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: continue_on_failure
+    db_column_name: continue_on_failure
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: phase
+    db_column_name: phase
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: configuration_id
+    db_column_name: configuration_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

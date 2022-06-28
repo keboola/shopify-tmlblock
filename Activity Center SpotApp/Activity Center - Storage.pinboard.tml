@@ -1,0 +1,53 @@
+guid: 3f9a0139-52b3-46aa-a9ee-49dfd061a64c
+pinboard:
+  name: Activity Center - Storage
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Bucket Size By Bucket and Project ID
+      tables:
+      - id: Buckets Metrics Worksheet
+        name: Buckets Metrics Worksheet
+      search_query: "[Bucket Name] [Project Name] [Is Last] = true [Bucket Bytes] [Bucket Gigabytes]"
+      answer_columns:
+      - name: Total Bucket Bytes
+      - name: Total Bucket Gigabytes
+      - name: Project Name
+      - name: Bucket Name
+      table:
+        table_columns:
+        - column_id: Bucket Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Project Name
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Bucket Bytes
+          headline_aggregation: SUM
+        - column_id: Total Bucket Gigabytes
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Bucket Name
+        - Project Name
+        - Total Bucket Bytes
+        - Total Bucket Gigabytes
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SANKEY
+        chart_columns:
+        - column_id: Bucket Name
+        - column_id: Project Name
+        - column_id: Total Bucket Bytes
+        - column_id: Total Bucket Gigabytes
+        axis_configs:
+        - x:
+          - Bucket Name
+          - Project Name
+          "y":
+          - Total Bucket Bytes
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT1\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {}},\"columnProperties\": [{\"columnId\": \"Bucket Name\",\"columnProperty\": {}},{\"columnId\": \"Project Name\",\"columnProperty\": {}},{\"columnId\": \"Total Bucket Bytes\",\"columnProperty\": {}},{\"columnId\": \"Total Bucket Gigabytes\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8c7c54d3-932d-44a4-b143-991008a2d508\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Bucket Bytes\"],\"isOpposite\": false}},{\"id\": \"637b68e9-1e05-426c-8761-96707eadd485\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Bucket Name\",\"Project Name\"]}}],\"systemSeriesColors\": [{\"serieName\": \"l0 - ops\",\"color\": \"#8C62F5\"},{\"serieName\": \"l0 - sales & marketing\",\"color\": \"#56D3A8\"},{\"serieName\": \"l0 - support\",\"color\": \"#06BF7F\"},{\"serieName\": \"l0 - telemetry\",\"color\": \"#FCD977\"},{\"serieName\": \"l1 - client statistics\",\"color\": \"#FCC838\"},{\"serieName\": \"l2 - data destination - bi\",\"color\": \"#82DFE9\"},{\"serieName\": \"l2 - data science\",\"color\": \"#48D1E0\"},{\"serieName\": \"main sales\",\"color\": \"#71A1F4\"},{\"serieName\": \"reseller 1\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Bucket Bytes\",\"color\": \"#48D1E0\"}]}"
+      display_mode: CHART_MODE
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE

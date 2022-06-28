@@ -1,0 +1,75 @@
+guid: 8f52cc71-6fc3-44f9-bbfb-3607b9eccc46
+table:
+  name: tokens
+  db: KEBOOLA_5539
+  schema: WORKSPACE_15606217
+  db_table: tokens
+  connection:
+    name: Activity Center
+  columns:
+  - name: token_id
+    db_column_name: token_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: user_id
+    db_column_name: user_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: token_description
+    db_column_name: token_description
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: token_is_master
+    db_column_name: token_is_master
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: token_is_orchestrator
+    db_column_name: token_is_orchestrator
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: token_is_expired
+    db_column_name: token_is_expired
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: token_is_disabled
+    db_column_name: token_is_disabled
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: token_is_telemetry
+    db_column_name: token_is_telemetry
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: token_created
+    db_column_name: token_created
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: token_project
+    db_column_name: token_project
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  joins_with:
+  - name: tokens_to_users
+    destination:
+      name: users
+    "on": "([tokens::user_id] = [users::user_id])"
+    type: LEFT_OUTER

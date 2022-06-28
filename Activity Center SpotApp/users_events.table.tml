@@ -1,0 +1,70 @@
+guid: b3523a84-0451-466a-b558-50ede6cededc
+table:
+  name: users_events
+  db: KEBOOLA_5539
+  schema: WORKSPACE_15606217
+  db_table: users_events
+  connection:
+    name: Activity Center
+  columns:
+  - name: user_event_id
+    db_column_name: user_event_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: creator_token_id
+    db_column_name: creator_token_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: project_id
+    db_column_name: project_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: event_category
+    db_column_name: event_category
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: event_description
+    db_column_name: event_description
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: event_status
+    db_column_name: event_status
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: event_time
+    db_column_name: event_time
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: event_date
+    db_column_name: event_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: event_context
+    db_column_name: event_context
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: event_url
+    db_column_name: event_url
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

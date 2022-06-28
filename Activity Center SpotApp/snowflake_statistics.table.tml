@@ -1,0 +1,88 @@
+guid: b18c7f3b-36d0-49ac-b479-470be69cb04f
+table:
+  name: snowflake_statistics
+  db: KEBOOLA_5539
+  schema: WORKSPACE_15606217
+  db_table: snowflake_statistics
+  connection:
+    name: Activity Center
+  columns:
+  - name: snowflake_job_id
+    db_column_name: snowflake_job_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: project_id
+    db_column_name: project_id
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_created
+    db_column_name: snowflake_job_created
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_created_date
+    db_column_name: snowflake_job_created_date
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: dwh_size
+    db_column_name: dwh_size
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_database
+    db_column_name: snowflake_job_database
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_schema
+    db_column_name: snowflake_job_schema
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_user
+    db_column_name: snowflake_job_user
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_type
+    db_column_name: snowflake_job_type
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_result
+    db_column_name: snowflake_job_result
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_queries
+    db_column_name: snowflake_job_queries
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_length
+    db_column_name: snowflake_job_length
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: snowflake_job_credits
+    db_column_name: snowflake_job_credits
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
