@@ -20,3 +20,6 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 - Shopify - Overview
 - Shopify - Customers
 - Shopify - Marketing Costs
+
+# Setup Instructions
+![image](https://user-images.githubusercontent.com/29617424/191084315-61b6f2df-f39b-4cbe-988e-aa14dacb4b3e.png)
