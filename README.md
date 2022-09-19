@@ -25,5 +25,5 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 
 # Setup Instructions
 
-To get started, sign up for a free account from Keboola if you don't have one already https://www.keboola.com/lp/spotapps
+To get started, follow this link - https://www.keboola.com/lp/spotapps - to sign up for a free account from Keboola if you don't have one already 
 
