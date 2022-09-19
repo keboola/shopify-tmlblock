@@ -1,5 +1,7 @@
 # Shopify TML Blocks
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29617424/191084315-61b6f2df-f39b-4cbe-988e-aa14dacb4b3e.png" alt="drawing" width="200"/>
+</p>
 Create a set of ThoughtSpot visualizations based on Shopify data hosted in Snowflake. Analyze orders, product margins, customer lifetime value, and customer segments based on RFM scores. 
 
 # Artifacts 
@@ -22,8 +24,6 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 - Shopify - Marketing Costs
 
 # Setup Instructions
-<img src="https://user-images.githubusercontent.com/29617424/191084315-61b6f2df-f39b-4cbe-988e-aa14dacb4b3e.png" alt="drawing" width="200"/>
 
-<p align="center">
-  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
-</p>
+
+
