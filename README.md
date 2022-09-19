@@ -15,3 +15,8 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 - CLV By Order Count
 - CLV By Time Since Previous Order
 - Marketing Campaign Costs
+
+# Liveboards Included
+- Shopify - Overview
+- Shopify - Customers
+- Shopify - Marketing Costs
