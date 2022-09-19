@@ -23,4 +23,7 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 
 # Setup Instructions
 <img src="https://user-images.githubusercontent.com/29617424/191084315-61b6f2df-f39b-4cbe-988e-aa14dacb4b3e.png" alt="drawing" width="200"/>
-![image](https://user-images.githubusercontent.com/29617424/191084315-61b6f2df-f39b-4cbe-988e-aa14dacb4b3e.png)
+
+<p align="center">
+  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
+</p>
