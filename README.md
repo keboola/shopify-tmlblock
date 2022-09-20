@@ -10,6 +10,9 @@ Create a set of ThoughtSpot visualizations based on Shopify data hosted in Snowf
 view details of the code here: 
 https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecommerce-shopify/v1/src
 
+## SpotApp Creation Tool
+- Automatically update the TML files with your own `database` and `schema` here: https://jordanrburger-ts-keboola-spotapps-streamlit-app-7svhq2.streamlitapp.com/
+
 
 # Worksheets
 - Primary Worksheet
