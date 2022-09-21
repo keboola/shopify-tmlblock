@@ -24,6 +24,8 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 # Liveboards Included
 - Shopify - Overview
 - Shopify - Customers
+- Shopify - Orders
+- Shopify - Products
 - Shopify - Marketing Costs
 
 # Setup Instructions
