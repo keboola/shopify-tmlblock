@@ -38,10 +38,15 @@ To get started, follow this link - https://www.keboola.com/lp/spotapps to sign u
 - From the list of available Use Cases, select "Shopify Analytics for Thoughtspot"
 - Be sure to read through the details section for any special instructions that need to be followed. 
   - if you plan on using a Keboola-provisioned Snowflake, please [review these instructions](https://docs.google.com/document/d/1_7DRa7KdeXT1ZZ22ENDxW4fDO1BL_n8uTqhiSQms2pE/edit) before proceeding.
-
+- Click on "Use Template" and give it a name
+- A new template will be created and populated with the necessary components.
+- In the editor, authorize your Shopify account using an API token
+  - Optionally, authorize any additional advertising platforms in order to include marketing insights
+- Choose your destination
 
 This video provides a step-by-step guide for how to work with Keboola Use Case Templates using Google Analytics as an example. 
 [![IMAGE ALT TEXT](https://i9.ytimg.com/vi/tRIepqMa770/mq2.jpg?sqp=CPyXrJkG&rs=AOn4CLC8i3PleDt0Kg6pbQ_35rlMpEPxIg)](http://www.youtube.com/watch?v=tRIepqMa770 "Data Templates")
+
 
 
 
