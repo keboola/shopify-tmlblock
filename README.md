@@ -57,8 +57,7 @@ This video provides a step-by-step guide for how to work with Keboola Use Case T
 
 # Liveboard Screenshots
 
-![ThoughtSpot shopify customers screenshot](https://user-images.githubusercontent.com/29617424/191552601-67c7e711-d79f-4be7-8b38-cf36c0b46a92.png)
-
+![ThoughtSpot shopify customers screenshot](https://user-images.githubusercontent.com/29617424/191553557-001e10d8-ba49-4fb3-b437-6d75eaa43cac.png)
 
 ![ThoughtSpot  shopify overview screenshot](https://user-images.githubusercontent.com/29617424/191551934-6f7ebde2-c385-4576-adfd-e238e0ad9db4.png)
 
