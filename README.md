@@ -30,11 +30,14 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 
 # Setup Instructions
 
+## 1. Create the template inside of Keboola 
+
 To get started, follow this link - https://www.keboola.com/lp/spotapps to sign up for a free account from Keboola if you don't have one already. 
+
+This video provides a step-by-step guide for how to work with templates inside of Keboola. 
 
 [![IMAGE ALT TEXT](https://i9.ytimg.com/vi/tRIepqMa770/mq2.jpg?sqp=CPyXrJkG&rs=AOn4CLC8i3PleDt0Kg6pbQ_35rlMpEPxIg)](http://www.youtube.com/watch?v=tRIepqMa770 "Data Templates")
 
 
 
-[![IMAGE ALT TEXT]("https://i9.ytimg.com/vi/tRIepqMa770/mq2.jpg?sqp=CPyXrJkG&rs=AOn4CLC8i3PleDt0Kg6pbQ_35rlMpEPxIg")]("http://www.youtube.com/watch?v=tRIepqMa770")
 
