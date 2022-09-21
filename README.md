@@ -2,13 +2,12 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/29617424/191084315-61b6f2df-f39b-4cbe-988e-aa14dacb4b3e.png" alt="drawing" width="200"/>
 </p>
-Create a set of ThoughtSpot visualizations based on Shopify data hosted in Snowflake. Analyze orders, product margins, customer lifetime value, and customer segments based on RFM scores. 
+Create a set of ThoughtSpot visualizations based on Shopify data hosted in Snowflake. Analyze orders, product margins, customer lifetime value, and customer segments based on RFM scores. Optionally, include popular advertising platforms such as Google and Facebook Ads to gain marketing insight.
 
 # Artifacts 
 
 ## Keboola Use Case Template
-view details of the code here: 
-https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecommerce-shopify/v1/src
+- view details of the code here: https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecommerce-shopify/v1/src
 
 ## SpotApp Creation Tool
 - Automatically update the TML files with your own `database` and `schema` [using this 🎈 Streamlit App](https://jordanrburger-ts-keboola-spotapps-streamlit-app-7svhq2.streamlitapp.com/) (or, run the app locally by [cloning this repository](https://github.com/jordanrburger/TS-Keboola-SpotApps))
@@ -37,7 +36,7 @@ To get started, follow this link - https://www.keboola.com/lp/spotapps to sign u
 - After logging into Keboola, select the menu option called "Use Cases"
 - From the list of available Use Cases, select "Shopify Analytics for Thoughtspot"
 - Be sure to read through the details section for any special instructions that need to be followed. 
-  - if you plan on using a Keboola-provisioned Snowflake, please [review these instructions](https://docs.google.com/document/d/1_7DRa7KdeXT1ZZ22ENDxW4fDO1BL_n8uTqhiSQms2pE/edit) before proceeding.
+  - if you plan on using a Keboola-provisioned Snowflake, select keboola provided DWH, and follow instructions in keboola.
 - Click on "Use Template" and give it a name
 - A new template will be created and populated with the necessary components.
 - In the editor, authorize your Shopify account using an API token
