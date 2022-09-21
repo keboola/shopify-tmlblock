@@ -1,0 +1,184 @@
+guid: 98677e73-d556-49f9-86d2-1ebf85655a65
+table:
+  name: bdm_orders
+  db: KEBOOLA_7615
+  schema: WORKSPACE_23825284
+  db_table: bdm_orders
+  connection:
+    name: Shopify Spotapp Creation 2022-09-08
+  columns:
+  - name: ORDER_ID
+    db_column_name: ORDER_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_DATE
+    db_column_name: ORDER_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: ORDER_STATUS
+    db_column_name: ORDER_STATUS
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: IS_SUCESSFUL
+    db_column_name: IS_SUCESSFUL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: IS_FIRST_PURCHASE
+    db_column_name: IS_FIRST_PURCHASE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: ORDER_CURRENCY
+    db_column_name: ORDER_CURRENCY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_CUSTOMER_EMAIL
+    db_column_name: ORDER_CUSTOMER_EMAIL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_REMARK
+    db_column_name: ORDER_REMARK
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_PACKAGE_NUMBER
+    db_column_name: ORDER_PACKAGE_NUMBER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_WEIGHT
+    db_column_name: ORDER_WEIGHT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: REFERER
+    db_column_name: REFERER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CHANNEL
+    db_column_name: CHANNEL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SOURCE
+    db_column_name: SOURCE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: BILLING_CITY
+    db_column_name: BILLING_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: BILLING_COUNTRY
+    db_column_name: BILLING_COUNTRY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: BILLING_ZIP
+    db_column_name: BILLING_ZIP
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SHIPPING_CITY
+    db_column_name: SHIPPING_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SHIPPING_COUNTRY
+    db_column_name: SHIPPING_COUNTRY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SHIPPING_ZIP
+    db_column_name: SHIPPING_ZIP
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: BILLING_TYPE
+    db_column_name: BILLING_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SHIPPING_TYPE
+    db_column_name: SHIPPING_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_TOTAL_PRICE_WITH_WAT
+    db_column_name: ORDER_TOTAL_PRICE_WITH_WAT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: ORDER_TOTAL_PRICE_WITHOUT_WAT
+    db_column_name: ORDER_TOTAL_PRICE_WITHOUT_WAT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: ORDER_TOTAL_PRICE_VAT
+    db_column_name: ORDER_TOTAL_PRICE_VAT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_ID
+    db_column_name: CUSTOMER_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_REGULARITY_TYPE
+    db_column_name: CUSTOMER_REGULARITY_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: DAYS_SINCE_PREVIOUS_ORDER
+    db_column_name: DAYS_SINCE_PREVIOUS_ORDER
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  joins_with:
+  - name: bdm_orders_to_bdm_customers
+    destination:
+      name: bdm_customers
+    "on": "([bdm_orders::CUSTOMER_ID] = [bdm_customers::CUSTOMER_ID])"
+    type: LEFT_OUTER

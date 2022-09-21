@@ -1,0 +1,49 @@
+guid: 47666fe1-15c8-4ddb-9fa7-85df2350a52d
+worksheet:
+  name: CLV by Time Since Previous Order
+  description: An analysis of customer lifetime value by time since previous order
+  tables:
+  - name: bdm_analyze_clv_by_time_from_previous_order
+  table_paths:
+  - id: bdm_analyze_clv_by_time_from_previous_order_1
+    table: bdm_analyze_clv_by_time_from_previous_order
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Time From Previous Order
+    column_id: bdm_analyze_clv_by_time_from_previous_order_1::TIME_FROM_PREVIOUS_ORDER
+    properties:
+      column_type: ATTRIBUTE
+  - name: Orders
+    column_id: bdm_analyze_clv_by_time_from_previous_order_1::ORDERS
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Unique Customers
+    column_id: bdm_analyze_clv_by_time_from_previous_order_1::UNIQUE_CUSTOMERS
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Avg Clv
+    column_id: bdm_analyze_clv_by_time_from_previous_order_1::AVG_CLV
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Order Total Price Vat
+    column_id: bdm_analyze_clv_by_time_from_previous_order_1::ORDER_TOTAL_PRICE_VAT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Avg Order Price
+    column_id: bdm_analyze_clv_by_time_from_previous_order_1::AVG_ORDER_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true

@@ -1,0 +1,131 @@
+guid: 6b301e63-e4ae-4db0-982d-8e1380d4f19c
+table:
+  name: bdm_products
+  db: KEBOOLA_7615
+  schema: WORKSPACE_23825284
+  db_table: bdm_products
+  connection:
+    name: Shopify Spotapp Creation 2022-09-08
+  columns:
+  - name: PRODUCT_ID
+    db_column_name: PRODUCT_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_CODE
+    db_column_name: PRODUCT_CODE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_CODE_2
+    db_column_name: PRODUCT_CODE_2
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_GUID
+    db_column_name: PRODUCT_GUID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_NAME
+    db_column_name: PRODUCT_NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_MANUFACTURER
+    db_column_name: PRODUCT_MANUFACTURER
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_TYPE
+    db_column_name: PRODUCT_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_EAN
+    db_column_name: PRODUCT_EAN
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_PRICE
+    db_column_name: PRODUCT_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: PRODUCT_STANDARD_PRICE
+    db_column_name: PRODUCT_STANDARD_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: PRODUCT_PURCHASE_PRICE
+    db_column_name: PRODUCT_PURCHASE_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: PRODUCT_OPTION1
+    db_column_name: PRODUCT_OPTION1
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_OPTION2
+    db_column_name: PRODUCT_OPTION2
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_OPTION3
+    db_column_name: PRODUCT_OPTION3
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_STOCK_AMOUNT
+    db_column_name: PRODUCT_STOCK_AMOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: CATEGORY
+    db_column_name: CATEGORY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CATEGORY_TEXT
+    db_column_name: CATEGORY_TEXT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRODUCT_URL
+    db_column_name: PRODUCT_URL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: IS_DELETED
+    db_column_name: IS_DELETED
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

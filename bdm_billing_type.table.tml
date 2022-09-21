@@ -1,0 +1,21 @@
+guid: 7bfd7de2-9ca5-4e5f-a910-fd0d46e7baf3
+table:
+  name: bdm_billing_type
+  db: KEBOOLA_7615
+  schema: WORKSPACE_23825284
+  db_table: bdm_billing_type
+  connection:
+    name: Shopify Spotapp Creation 2022-09-08
+  columns:
+  - name: BILLING_TYPE_ID
+    db_column_name: BILLING_TYPE_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: NAME
+    db_column_name: NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

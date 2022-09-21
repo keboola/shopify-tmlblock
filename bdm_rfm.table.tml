@@ -1,0 +1,133 @@
+guid: b120594b-1eac-4a1b-b63e-3b1b1e856914
+table:
+  name: bdm_rfm
+  db: KEBOOLA_7615
+  schema: WORKSPACE_23825284
+  db_table: bdm_rfm
+  connection:
+    name: Shopify Spotapp Creation 2022-09-08
+  columns:
+  - name: CUSTOMER_ID
+    db_column_name: CUSTOMER_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SNAPSHOT_DATE
+    db_column_name: SNAPSHOT_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: R_RAW
+    db_column_name: R_RAW
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: R_SCORE
+    db_column_name: R_SCORE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: F_RAW
+    db_column_name: F_RAW
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: F_SCORE
+    db_column_name: F_SCORE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: M_RAW
+    db_column_name: M_RAW
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: M_SCORE
+    db_column_name: M_SCORE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: FINAL_SCORE
+    db_column_name: FINAL_SCORE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: SEGMENT
+    db_column_name: SEGMENT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: SEGMENT_NR
+    db_column_name: SEGMENT_NR
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: PRE_SEG_1
+    db_column_name: PRE_SEG_1
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: PRE_SEG_NUMBER_1
+    db_column_name: PRE_SEG_NUMBER_1
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: TIME_AS
+    db_column_name: TIME_AS
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: FIRST_SUCCEEDED_TRANSACTION_DATE
+    db_column_name: FIRST_SUCCEEDED_TRANSACTION_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: ACTUAL_STATE
+    db_column_name: ACTUAL_STATE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  joins_with:
+  - name: bdm_rfm_to_bdm_customers
+    destination:
+      name: bdm_customers
+    "on": "([bdm_rfm::CUSTOMER_ID] = [bdm_customers::CUSTOMER_ID])"
+    type: LEFT_OUTER

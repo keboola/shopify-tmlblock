@@ -1,0 +1,126 @@
+object:
+- name: Customers
+  filename: Customers.worksheet.tml
+  status:
+    status_code: OK
+  type: worksheet
+  id: ebd7c2a4-ce1f-4edb-90f4-ae841b560107
+  dependency:
+  - name: bdm_rfm
+    filename: bdm_rfm.table.tml
+  - name: bdm_customers
+    filename: bdm_customers.table.tml
+- name: Primary Worksheet
+  filename: Primary Worksheet.worksheet.tml
+  status:
+    status_code: OK
+  type: worksheet
+  id: 6fa88dbd-e0d4-4749-b3a9-595b22949976
+  dependency:
+  - name: bdm_orders
+    filename: bdm_orders.table.tml
+  - name: bdm_products
+    filename: bdm_products.table.tml
+  - name: bdm_order_lines
+    filename: bdm_order_lines.table.tml
+  - name: bdm_customers
+    filename: bdm_customers.table.tml
+- name: bdm_customers
+  filename: bdm_customers.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: 457e3db3-e9b6-481b-a05b-cdff45d5575c
+- name: bdm_rfm
+  filename: bdm_rfm.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: b120594b-1eac-4a1b-b63e-3b1b1e856914
+- name: CLV by Order Count
+  filename: CLV by Order Count.worksheet.tml
+  status:
+    status_code: OK
+  type: worksheet
+  id: d80dad1a-c369-404c-9984-f78637c99760
+  dependency:
+  - name: bdm_analyze_clv_by_order_count
+    filename: bdm_analyze_clv_by_order_count.table.tml
+- name: CLV by Time Since Previous Order
+  filename: CLV by Time Since Previous Order.worksheet.tml
+  status:
+    status_code: OK
+  type: worksheet
+  id: 47666fe1-15c8-4ddb-9fa7-85df2350a52d
+  dependency:
+  - name: bdm_analyze_clv_by_time_from_previous_order
+    filename: bdm_analyze_clv_by_time_from_previous_order.table.tml
+- name: Marketing Campaign Costs
+  filename: Marketing Campaign Costs.worksheet.tml
+  status:
+    status_code: OK
+  type: worksheet
+  id: 77ab7e69-7d90-4935-8b42-a1a9813dea80
+  dependency:
+  - name: bdm_marketing_campaign_costs
+    filename: bdm_marketing_campaign_costs.table.tml
+- name: bdm_marketing_campaign_costs
+  filename: bdm_marketing_campaign_costs.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: bfc6d397-2807-4fa4-9249-279a35a6a9df
+- name: bdm_marketing_campaign_costs_monthly
+  filename: bdm_marketing_campaign_costs_monthly.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: d5ff16a5-c41c-412a-97e1-3dc08279a47b
+- name: bdm_products
+  filename: bdm_products.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: 6b301e63-e4ae-4db0-982d-8e1380d4f19c
+- name: bdm_orders
+  filename: bdm_orders.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: 98677e73-d556-49f9-86d2-1ebf85655a65
+- name: bdm_shipping_type
+  filename: bdm_shipping_type.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: 759b252b-bb77-484f-a984-24b1d303bb27
+- name: bdm_product_margin_over_time
+  filename: bdm_product_margin_over_time.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: fcada3a7-a4dc-43a6-8c01-7d196ebb83fa
+- name: bdm_order_lines
+  filename: bdm_order_lines.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: 2668ba09-0e97-415c-a29a-b2ab30f5e12f
+- name: bdm_billing_type
+  filename: bdm_billing_type.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: 7bfd7de2-9ca5-4e5f-a910-fd0d46e7baf3
+- name: bdm_analyze_clv_by_time_from_previous_order
+  filename: bdm_analyze_clv_by_time_from_previous_order.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: 39460eda-34bf-4147-a0e7-b3e5bbabc536
+- name: bdm_analyze_clv_by_order_count
+  filename: bdm_analyze_clv_by_order_count.table.tml
+  status:
+    status_code: OK
+  type: table
+  id: e4e5e49a-8ffe-45ee-ab0d-b7ee5c6f3364

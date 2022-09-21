@@ -1,0 +1,49 @@
+guid: d80dad1a-c369-404c-9984-f78637c99760
+worksheet:
+  name: CLV by Order Count
+  description: An analysis of customer lifetime value by order count
+  tables:
+  - name: bdm_analyze_clv_by_order_count
+  table_paths:
+  - id: bdm_analyze_clv_by_order_count_1
+    table: bdm_analyze_clv_by_order_count
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Customer Category By Order Count
+    column_id: bdm_analyze_clv_by_order_count_1::CUSTOMER_CATEGORY_BY_ORDER_COUNT
+    properties:
+      column_type: ATTRIBUTE
+  - name: Orders
+    column_id: bdm_analyze_clv_by_order_count_1::ORDERS
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Unique Cutomers
+    column_id: bdm_analyze_clv_by_order_count_1::UNIQUE_CUTOMERS
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Avg Clv
+    column_id: bdm_analyze_clv_by_order_count_1::AVG_CLV
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Order Total Price Vat
+    column_id: bdm_analyze_clv_by_order_count_1::ORDER_TOTAL_PRICE_VAT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Avg Order Price
+    column_id: bdm_analyze_clv_by_order_count_1::AVG_ORDER_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true

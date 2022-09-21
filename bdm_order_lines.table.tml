@@ -1,0 +1,113 @@
+guid: 2668ba09-0e97-415c-a29a-b2ab30f5e12f
+table:
+  name: bdm_order_lines
+  db: KEBOOLA_7615
+  schema: WORKSPACE_23825284
+  db_table: bdm_order_lines
+  connection:
+    name: Shopify Spotapp Creation 2022-09-08
+  columns:
+  - name: ORDER_ID
+    db_column_name: ORDER_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_LINE_ID
+    db_column_name: ORDER_LINE_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ORDER_DATE
+    db_column_name: ORDER_DATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE_TIME
+  - name: ORDER_LINE_PRODUCT_ID
+    db_column_name: ORDER_LINE_PRODUCT_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ITEMNAME
+    db_column_name: ITEMNAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: DISCOUNT_PERCENT
+    db_column_name: DISCOUNT_PERCENT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: ORDER_LINE_AMOUNT
+    db_column_name: ORDER_LINE_AMOUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: ORDER_LINE_PRICE_WITH_TAXES
+    db_column_name: ORDER_LINE_PRICE_WITH_TAXES
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: ORDER_LINE_PRICE_WITHOUT_TAXES
+    db_column_name: ORDER_LINE_PRICE_WITHOUT_TAXES
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: ORDER_LINE_PRICE_TAXES
+    db_column_name: ORDER_LINE_PRICE_TAXES
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: ORDER_LINE_TAXES_RATE
+    db_column_name: ORDER_LINE_TAXES_RATE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: LINE_PURCHASE_PRICE
+    db_column_name: LINE_PURCHASE_PRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: ORDER_ITEM_TYPE
+    db_column_name: ORDER_ITEM_TYPE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  joins_with:
+  - name: bdm_orders_to_bdm_order_lines
+    destination:
+      name: bdm_orders
+    "on": "([bdm_order_lines::ORDER_ID] = [bdm_orders::ORDER_ID])"
+    type: LEFT_OUTER
+  - name: bdm_order_lines_to_bdm_products
+    destination:
+      name: bdm_products
+    "on": "([bdm_order_lines::ORDER_LINE_PRODUCT_ID] = [bdm_products::PRODUCT_ID])"
+    type: LEFT_OUTER

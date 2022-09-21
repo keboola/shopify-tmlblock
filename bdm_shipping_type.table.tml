@@ -1,0 +1,21 @@
+guid: 759b252b-bb77-484f-a984-24b1d303bb27
+table:
+  name: bdm_shipping_type
+  db: KEBOOLA_7615
+  schema: WORKSPACE_23825284
+  db_table: bdm_shipping_type
+  connection:
+    name: Shopify Spotapp Creation 2022-09-08
+  columns:
+  - name: SHIPPING_TYPE_ID
+    db_column_name: SHIPPING_TYPE_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: NAME
+    db_column_name: NAME
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR

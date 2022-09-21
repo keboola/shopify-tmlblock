@@ -1,0 +1,48 @@
+guid: 77ab7e69-7d90-4935-8b42-a1a9813dea80
+worksheet:
+  name: Marketing Campaign Costs
+  tables:
+  - name: bdm_marketing_campaign_costs
+  table_paths:
+  - id: bdm_marketing_campaign_costs_1
+    table: bdm_marketing_campaign_costs
+    join_path:
+    - {}
+  worksheet_columns:
+  - name: Marketing Campaign Costs Id
+    column_id: bdm_marketing_campaign_costs_1::MARKETING_CAMPAIGN_COSTS_ID
+    properties:
+      column_type: ATTRIBUTE
+  - name: Source
+    column_id: bdm_marketing_campaign_costs_1::SOURCE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Date
+    column_id: bdm_marketing_campaign_costs_1::DATE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Campaign
+    column_id: bdm_marketing_campaign_costs_1::CAMPAIGN
+    properties:
+      column_type: ATTRIBUTE
+  - name: Impressions
+    column_id: bdm_marketing_campaign_costs_1::IMPRESSIONS
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Clicks
+    column_id: bdm_marketing_campaign_costs_1::CLICKS
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Cost
+    column_id: bdm_marketing_campaign_costs_1::COST
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true

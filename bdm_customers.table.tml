@@ -1,0 +1,109 @@
+guid: 457e3db3-e9b6-481b-a05b-cdff45d5575c
+table:
+  name: bdm_customers
+  db: KEBOOLA_7615
+  schema: WORKSPACE_23825284
+  db_table: bdm_customers
+  connection:
+    name: Shopify Spotapp Creation 2022-09-08
+  columns:
+  - name: CUSTOMER_ID
+    db_column_name: CUSTOMER_ID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_EMAIL_HASH
+    db_column_name: CUSTOMER_EMAIL_HASH
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_EMAIL
+    db_column_name: CUSTOMER_EMAIL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_ACCOUNT_GUID
+    db_column_name: CUSTOMER_ACCOUNT_GUID
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_BILLING_CITY
+    db_column_name: CUSTOMER_BILLING_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_BILLING_COUNTRY
+    db_column_name: CUSTOMER_BILLING_COUNTRY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_SHIPPING_CITY
+    db_column_name: CUSTOMER_SHIPPING_CITY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_SHIPPING_COUNTRY
+    db_column_name: CUSTOMER_SHIPPING_COUNTRY
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_PRICE_LIST
+    db_column_name: CUSTOMER_PRICE_LIST
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: CUSTOMER_GROUP
+    db_column_name: CUSTOMER_GROUP
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: TOTAL_SPEND
+    db_column_name: TOTAL_SPEND
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  - name: MARKETING_OPT_IN_LEVEL
+    db_column_name: MARKETING_OPT_IN_LEVEL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: VERIFIED_EMAIL
+    db_column_name: VERIFIED_EMAIL
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: ORDERS_COUNT
+    db_column_name: ORDERS_COUNT
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: ACCEPTS_MARKETING
+    db_column_name: ACCEPTS_MARKETING
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: BOOL
+  - name: STATE
+    db_column_name: STATE
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
