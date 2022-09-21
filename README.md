@@ -56,9 +56,8 @@ This video provides a step-by-step guide for how to work with Keboola Use Case T
 - Upload the resulting `.zip` file to ThoughtSpot
 
 # Liveboard Screenshots
-<img width="1430" alt="Screen Shot 2022-09-21 at 11 44 36 AM" src="https://user-images.githubusercontent.com/29617424/191550151-ec5e5f9f-8a34-4805-b2c9-7da05480573c.png">
 
-<img width="1411" alt="Screen Shot 2022-09-21 at 11 45 04 AM" src="https://user-images.githubusercontent.com/29617424/191550264-4613ccf0-7f5d-4db7-9cc2-c215a13f4d7e.png">
+![ThoughtSpot shopify customers screenshot](https://user-images.githubusercontent.com/29617424/191552394-cf3e2556-190c-4f09-9a31-8c6f788857ba.png)
 
 ![ThoughtSpot  shopify overview screenshot](https://user-images.githubusercontent.com/29617424/191551934-6f7ebde2-c385-4576-adfd-e238e0ad9db4.png)
 
