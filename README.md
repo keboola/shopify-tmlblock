@@ -31,5 +31,6 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 # Setup Instructions
 
 To get started, follow this link - https://www.keboola.com/lp/spotapps to sign up for a free account from Keboola if you don't have one already. 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tRIepqMa770" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
