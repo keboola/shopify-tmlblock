@@ -43,11 +43,13 @@ To get started, follow this link - https://www.keboola.com/lp/spotapps to sign u
 - In the editor, authorize your Shopify account using an API token
   - Optionally, authorize any additional advertising platforms in order to include marketing insights
 - Choose your destination
+- Run your flow!
 
 This video provides a step-by-step guide for how to work with Keboola Use Case Templates using Google Analytics as an example. 
 [![IMAGE ALT TEXT](https://i9.ytimg.com/vi/tRIepqMa770/mq2.jpg?sqp=CPyXrJkG&rs=AOn4CLC8i3PleDt0Kg6pbQ_35rlMpEPxIg)](http://www.youtube.com/watch?v=tRIepqMa770 "Data Templates")
 
 
+## 2. Connect to ThoughtSpot & Import the TML
 
 
 
