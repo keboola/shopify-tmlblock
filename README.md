@@ -34,8 +34,13 @@ https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecomm
 
 To get started, follow this link - https://www.keboola.com/lp/spotapps to sign up for a free account from Keboola if you don't have one already. 
 
-This video provides a step-by-step guide for how to work with templates inside of Keboola. 
+- After logging into Keboola, select the menu option called "Use Cases"
+- From the list of available Use Cases, select "Shopify Analytics for Thoughtspot"
+- Be sure to read through the details section for any special instructions that need to be followed. 
+  - if you plan on using a Keboola-provisioned Snowflake, please [review these instructions](https://docs.google.com/document/d/1_7DRa7KdeXT1ZZ22ENDxW4fDO1BL_n8uTqhiSQms2pE/edit) before proceeding.
 
+
+This video provides a step-by-step guide for how to work with Keboola Use Case Templates using Google Analytics as an example. 
 [![IMAGE ALT TEXT](https://i9.ytimg.com/vi/tRIepqMa770/mq2.jpg?sqp=CPyXrJkG&rs=AOn4CLC8i3PleDt0Kg6pbQ_35rlMpEPxIg)](http://www.youtube.com/watch?v=tRIepqMa770 "Data Templates")
 
 
