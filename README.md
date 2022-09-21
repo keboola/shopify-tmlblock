@@ -11,7 +11,7 @@ view details of the code here:
 https://github.com/keboola/keboola-as-code-templates/tree/main/thoughtspot-ecommerce-shopify/v1/src
 
 ## SpotApp Creation Tool
-- Automatically update the TML files with your own `database` and `schema` here: https://jordanrburger-ts-keboola-spotapps-streamlit-app-7svhq2.streamlitapp.com/ (or, run the app locally by [cloning this repository](https://github.com/jordanrburger/TS-Keboola-SpotApps)
+- Automatically update the TML files with your own `database` and `schema` [using this Streamlit App](https://jordanrburger-ts-keboola-spotapps-streamlit-app-7svhq2.streamlitapp.com/) (or, run the app locally by [cloning this repository](https://github.com/jordanrburger/TS-Keboola-SpotApps))
 
 
 # Worksheets
