@@ -46,7 +46,7 @@ To get started, follow this link - https://www.keboola.com/lp/spotapps to sign u
 
 This video provides a step-by-step guide for how to work with Keboola Use Case Templates using Google Analytics as an example. 
 
-[![IMAGE ALT TEXT](https://i9.ytimg.com/vi/tRIepqMa770/mq2.jpg?sqp=CPyXrJkG&rs=AOn4CLC8i3PleDt0Kg6pbQ_35rlMpEPxIg)](http://www.youtube.com/watch?v=tRIepqMa770 "Data Templates")
+[![Data Templates Video](https://i9.ytimg.com/vi/tRIepqMa770/mq2.jpg?sqp=CPyXrJkG&rs=AOn4CLC8i3PleDt0Kg6pbQ_35rlMpEPxIg)](http://www.youtube.com/watch?v=tRIepqMa770 "Data Templates")
 
 ## 2. Connect to ThoughtSpot & Import the TML
 
