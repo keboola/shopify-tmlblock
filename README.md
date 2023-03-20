@@ -33,8 +33,8 @@ Create a set of ThoughtSpot visualizations based on Shopify data hosted in Snowf
 
 To get started, follow this link - https://www.keboola.com/lp/spotapps to sign up for a free account from Keboola if you don't have one already. 
 
-- After logging into Keboola, select the menu option called "Use Cases"
-- From the list of available Use Cases, select "Shopify Analytics for Thoughtspot"
+- After logging into Keboola, select the menu option called "Templates"
+- From the list of available Templates, select "Shopify Analytics for Thoughtspot"
 - Be sure to read through the details section for any special instructions that need to be followed. 
   - if you plan on using a Keboola-provisioned Snowflake, select keboola provided DWH, and follow instructions in keboola.
 - Click on "Use Template" and give it a name
